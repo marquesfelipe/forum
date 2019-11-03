@@ -1,0 +1,186 @@
+{
+	"variables": [],
+	"info": {
+		"name": "estudo",
+		"_postman_id": "2ea2ddf7-f9a4-5daf-9bc5-298aeeac6336",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "busca topicos",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/topicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					],
+					"query": [
+						{
+							"key": "nomeCurso",
+							"value": "Spring+Boot",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "busca topicos por id",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/topicos/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"4"
+					],
+					"query": [
+						{
+							"key": "nomeCurso",
+							"value": "Spring+Boot",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "excluir topicos por id",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/topicos/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos",
+						"4"
+					],
+					"query": [
+						{
+							"key": "nomeCurso",
+							"value": "Spring+Boot",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "salvar topico",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/topicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					],
+					"query": [
+						{
+							"key": "nomeCurso",
+							"value": "Spring+Boot",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"titulo\": \"Dúvidas teste\",\n        \"mensagem\": \"teste unitário\",\n        \"nomeCurso\": \"Spring Boot\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "atualizar topico",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/topicos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"topicos"
+					],
+					"query": [
+						{
+							"key": "nomeCurso",
+							"value": "Spring+Boot",
+							"equals": true,
+							"description": "",
+							"disabled": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"titulo\": \"Dúvida\",\n        \"mensagem\": \"teste unitário\",\n        \"nomeCurso\": \"Spring Boot\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
