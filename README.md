@@ -1,5 +1,13 @@
-# forum
-aplicação REST com Spring Boot, tendo como base projeto da Alura
+# Forum API
+##Api para gerenciamento de topicos de um forum de cursos
+##As tecnologias utilizadas são Java, Spring Boot
+
+###Build
+Antes de executar o build suba o Sonar, por exemplo via docker: docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest <br>
+As credenciais padrão são admin:admin<br>
+O comando para fazer o build é : clean package sonar:sonar -Dsonar.host.url=HOST_SONAR -Dsonar.login=LOGIN_SONAR -Dsonar.password=PASS_SONAR  
+
+
 
 ```
 Dicas:

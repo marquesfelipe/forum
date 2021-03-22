@@ -2,6 +2,10 @@ HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
+.mvn
+mvnw
+mvnw.cmd
+
 ### STS ###
 .apt_generated
 .classpath
@@ -27,3 +31,5 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+${project.test.result.directory}
