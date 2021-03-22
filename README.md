@@ -1,6 +1,6 @@
 # Forum API
-## Api para gerenciamento de topicos de um forum de cursos 
-## As tecnologias utilizadas são Java, Spring Boot
+### Api para gerenciamento de topicos de um forum de cursos 
+### As tecnologias utilizadas são Java, Spring Boot
 
 ### Build
 Antes de executar o build suba o Sonar, por exemplo via docker: docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest <br>
